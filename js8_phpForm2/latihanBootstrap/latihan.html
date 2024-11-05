@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pengenalan Bootstrap</title>
+    <!-- Menyisipkan Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Menyisipkan Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Styling Gambar -->
+    <style>
+        .fixed-size {
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* Agar gambar menyesuaikan tanpa terdistorsi */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Macam Macam Bunga</h1>
+            <br>
+            <br>
+            <div class="row">
+                <!-- Bagian Bunga Tulip -->
+                <div class="col d-flex align-items-start">
+                    <img src="image/tulip.jpg" class="rounded-circle fixed-size" alt="gambar tulip" style="width: 150px; height: 150px; margin-right: 20px;">
+                    <div>
+                        <h3>Bunga Tulip</h3>
+                        <p>
+                            Tulip merupakan tumbuhan tahunan berumbi yang tingginya antara 10–70 cm, 
+                            daunnya berlilin, berbentuk sempit memanjang berwarna hijau nuansa kebiru-biruan, 
+                            dan bunganya berukuran besar terdiri 6 helai daun mahkota.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Bagian Bunga Lily -->
+                <div class="col d-flex align-items-start">
+                    <img src="image/daffodil.jpg" class="rounded-circle fixed-size" alt="gambar lily" style="width: 150px; height: 150px; margin-right: 20px;">
+                    <div>
+                        <h3>Bunga Lily</h3>
+                        <p>
+                            Bunga daffodil yang memiliki nama latin Narcissus pseudonarcissus 
+                            adalah jenis bunga yang berasal dari Eropa dan Afrika. 
+                            Tanaman ini memiliki bunga tunggal dengan tangkai hijau yang panjang. 
+                            Kelopak bunganya berwarna putih atau kuning dengan ciri khas bentuk terompet di bagian tengahnya.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
